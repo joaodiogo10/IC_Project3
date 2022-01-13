@@ -1,0 +1,1 @@
+g++ fcm.cpp -o fcm -Wall
