@@ -6,7 +6,7 @@
 std::vector<std::string> getAllContexts(uint8_t order);
 std::vector<std::string> getAllContexts(std::vector<std::string> strings, uint8_t order);
 void initializeMap(std::map<std::string, std::map<char, uint32_t>>& mapContext, uint8_t order);
-void printToFile(std::map<std::string, std::map<char, uint32_t>>& mapContext, std::string fileName);
+void printToFile(std::map<std::string, std::map<char, uint32_t>>& mapContext, std::map<std::string, uint32_t>& totalCount, std::string fileName);
 
 int main(int argc, char* argv[]) {
     if(argc < 3 || std::atoi(argv[2]) < 0) {
@@ -29,6 +29,8 @@ int main(int argc, char* argv[]) {
     std::map<std::string, std::map<char, uint32_t>> mapContext;
     initializeMap(mapContext, order);
 
+    std::map<std::string, uint32_t> totalCount;
+
     char context[order];
     //context initially starts with 'a's
     for(int i = 0; i < order; i++) {
@@ -42,7 +44,7 @@ int main(int argc, char* argv[]) {
 
         if(std::isalpha(nextChar)) {
             std::string strContext(context, order);
-
+            totalCount[strContext]++;
             mapContext[strContext][nextChar]++;
             //update context        
             for(int i = 1; i < order; i++) {
@@ -52,7 +54,7 @@ int main(int argc, char* argv[]) {
         }
     }
     
-    printToFile(mapContext, "output.txt");
+    printToFile(mapContext, totalCount,"output.txt");
     
     inputFile.close();
     return 0;
@@ -101,16 +103,20 @@ std::vector<std::string> getAllContexts(std::vector<std::string> strings, uint8_
     return getAllContexts(newStrings, order - 1);
 }
 
-void printToFile(std::map<std::string, std::map<char, uint32_t>>& mapContext, std::string fileName) {
+void printToFile(std::map<std::string, std::map<char, uint32_t>>& mapContext,std::map<std::string,uint32_t>& totalCount,std::string fileName) {
     std::ofstream outputFile;
     outputFile.open(fileName);
 
+    uint32_t total = 0;
     for(const auto pairContext: mapContext) {
+        total += totalCount[pairContext.first];
         std::map<char, uint32_t> mapCount = pairContext.second;
         for(const auto pairCount: mapCount) {
             outputFile << pairContext.first << " " << pairCount.first << ": " << pairCount.second << std::endl; 
         }
+        outputFile << "------Total------\n" << totalCount[pairContext.first] << std::endl;  
     } 
 
+    outputFile << "Total:" << total << std::endl;
     outputFile.close();
 }
