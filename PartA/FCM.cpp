@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
-#include <FCM.h>
+#include <math.h>
+#include "FCM.h"
 
 FCM::FCM(uint8_t order){
     this->order = order;
@@ -76,7 +77,7 @@ bool FCM::loadFile(std::string fileName){
         std::cout << "Failed to open file \"" << fileName  << "\""<< std::endl;
         return false;
     }
-
+    std::cout << "can read file" << std::endl;
     char context[order];
     //context initially starts with 'a's
     for(int i = 0; i < order; i++) {
@@ -87,6 +88,7 @@ bool FCM::loadFile(std::string fileName){
     while(inputFile >> nextChar) {
         nextChar = tolower(nextChar);
 
+        std::cout << "a" << std::endl;
         if(std::isalpha(nextChar)) {
             std::string strContext(context, order);
             totalCount[strContext]++;
@@ -97,5 +99,70 @@ bool FCM::loadFile(std::string fileName){
             }
             context[order-1] = nextChar;
         }
+    }
+    inputFile.close();
+    return true;
+}
+
+bool FCM::saveFile(std::string fileName){
+    std::ofstream outputFile;
+    outputFile.open(fileName);
+
+    for(const auto pairContext: mapContext) {
+        std::map<char, uint32_t> mapCount = pairContext.second;
+        for(const auto pairCount: mapCount) {
+            outputFile << pairContext.first << " " << pairCount.first << " " << pairCount.second << std::endl; 
+        } 
+    }
+
+    outputFile.close();
+    return true; 
+}
+
+uint32_t FCM::modelTotalCount(std::map<std::string, uint32_t> &totalCount)
+{
+    uint32_t tCount = 0;
+    for (auto const &counts : totalCount)
+    {
+        tCount += counts.second;
+    }
+
+    return tCount;
+}
+
+void FCM::subModelEntropy(std::map<std::string, std::map<char, uint32_t>> &mapContext, std::map<std::string, uint32_t> &totalCount, std::map<std::string, double> &mapSubModelEntropy)
+{
+    for (auto const &context : mapContext)
+    {
+        std::string currentContext = context.first;
+        double entropy = 0;
+
+        for (auto const &symbols : context.second)
+        {
+            double prob = 0;
+
+            if (totalCount[currentContext] != 0)
+            {
+                prob = symbols.second / double(totalCount[currentContext]);
+            }
+
+            if (prob != 0)
+            {
+                entropy += prob * log2(prob);
+            }
+        }
+
+        mapSubModelEntropy[currentContext] = -entropy;
+    }
+}
+
+void FCM::subModelProb(std::map<std::string, std::map<char, uint32_t>> &mapContext, std::map<std::string, uint32_t> &totalCount, std::map<std::string, double> &mapSubModelProb){
+    uint32_t tCount = modelTotalCount(totalCount);
+
+    for (auto const &context : mapContext)
+    {
+        std::string currentContext = context.first;
+
+        mapSubModelProb[currentContext] = double(totalCount[currentContext]) / tCount;
     }
 }

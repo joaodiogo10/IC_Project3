@@ -1,1 +1,1 @@
-g++ fcm.cpp -o fcm -Wall
+cd build; make;
