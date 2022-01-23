@@ -13,6 +13,19 @@ FCM::FCM(uint8_t order) {
     this->totalMatches = 0;
 }
 
+std::map<char, uint64_t> FCM::getMapContext(const std::string context) {
+    return mapContext[context];
+}
+
+uint64_t FCM::getContextCount(const std::string context) {
+    return contextCount[context];
+}
+
+uint8_t FCM::getOrder() {
+    return order;
+}
+
+
 bool FCM::loadFile(std::string filePath){
     std::ifstream inputFile;
     inputFile.open(filePath, std::ios::in);
@@ -28,27 +41,27 @@ bool FCM::loadFile(std::string filePath){
     char nextChar = '\0';
     while(inputFile >> nextChar) {
         nextChar = tolower(nextChar);
-        if(std::isalpha(nextChar)) {
-            std::string strContext(context, order);
+        //if(std::isalpha(nextChar)) {
+        std::string strContext(context, order);
 
-            if(totalCount.count(strContext) == 0)
-            {
-                totalCount[strContext] = 1;
-                mapContext[strContext][nextChar] = 1;
-            }
-            else
-            {
-                totalCount[strContext]++;
-                mapContext[strContext][nextChar]++;
-            }
-            totalMatches++;
-
-            //update context        
-            for(int i = 1; i < order; i++) {
-                context[i-1] = context[i];
-            }
-            context[order-1] = nextChar;
+        if(contextCount.count(strContext) == 0)
+        {
+            contextCount[strContext] = 1;
+            mapContext[strContext][nextChar] = 1;
         }
+        else
+        {
+            contextCount[strContext]++;
+            mapContext[strContext][nextChar]++;
+        }
+        totalMatches++;
+
+        //update context        
+        for(int i = 1; i < order; i++) {
+            context[i-1] = context[i];
+        }
+        context[order-1] = nextChar;
+        
     }
 
     inputFile.close();
@@ -57,28 +70,30 @@ bool FCM::loadFile(std::string filePath){
 }
 
 bool FCM::loadFCM(std::string filePath) {
+    if(!(filePath.substr(filePath.find_last_of(".") + 1) == "fcm"))
+        return false;
+
     std::ifstream inputFile;
     inputFile.open(filePath);
     if(!inputFile) 
         return false;
     
-    bool success = true;
     if(!(inputFile >> totalMatches))
-        success = false;
+        return false;
 
     std::string context;
     char c;
     uint64_t total;
 
     while(inputFile.peek() != EOF) {
-        if(!(inputFile >> context)) success = false;
-        if(!(inputFile >> c)) success = false;
-        if(!(inputFile >> total)) success = false;
+        if(!(inputFile >> context)) return false;
+        if(!(inputFile >> c)) return false;
+        if(!(inputFile >> total)) return false;
         
-        if(totalCount.count(context) == 0)
-            totalCount[context] = 0;
+        if(contextCount.count(context) == 0)
+            contextCount[context] = 0;
 
-        totalCount[context] += total;
+        contextCount[context] += total;
         mapContext[context][c] = total;
 
         inputFile.get();
@@ -86,7 +101,7 @@ bool FCM::loadFCM(std::string filePath) {
 
     order = context.size();
     inputFile.close();
-    return success;
+    return true;
 }   
 
 bool FCM::saveFCM(std::string filePath) {
@@ -125,9 +140,9 @@ double FCM::modelEntropy() {
         {
             double prob = 0;
 
-            if (totalCount[currentContext] != 0)
+            if (contextCount[currentContext] != 0)
             {
-                prob = symbols.second / double(totalCount[currentContext]);
+                prob = symbols.second / double(contextCount[currentContext]);
             }
 
             if (prob != 0)
@@ -147,7 +162,7 @@ double FCM::modelEntropy() {
     {
         std::string currentContext = context.first;
 
-        mapSubModelProb[currentContext] = double(totalCount[currentContext]) / totalMatches;
+        mapSubModelProb[currentContext] = double(contextCount[currentContext]) / totalMatches;
     }
 
     //finally calculate model entropy
@@ -168,12 +183,12 @@ bool FCM::printToFile(std::string filePath) {
 
     uint32_t total = 0;
     for(const auto pairContext: mapContext) {
-        total += totalCount[pairContext.first];
+        total += contextCount[pairContext.first];
         std::map<char, uint64_t> mapCount = pairContext.second;
         for(const auto pairCount: mapCount) {
             outputFile << pairContext.first << " " << pairCount.first << ": " << pairCount.second << std::endl; 
         }
-        outputFile << "------Total------\n" << totalCount[pairContext.first] << std::endl;  
+        outputFile << "------Total------\n" << contextCount[pairContext.first] << std::endl;  
     } 
 
     outputFile << "Total:" << total << std::endl;
