@@ -95,11 +95,17 @@ class FCM {
         uint8_t order;
         uint64_t totalMatches;
 
-        std::map<std::string, std::map<char, uint64_t>> mapContext;
-        std::map<std::string, uint64_t> contextCount;
+    double modelEntropy();
 
-        //std::vector<std::string> getAllContexts(uint8_t order);
-        //std::vector<std::string> getAllContexts(std::vector<std::string> strings, uint8_t order);
+private:
+    uint8_t order;
+    uint64_t totalMatches;
 
-        //void initializeMap(std::map<std::string, std::map<char, uint32_t>>& mapContext, uint8_t order);
+    std::map<std::string, std::map<char, uint64_t>> mapContext;
+    std::map<std::string, uint64_t> contextCount;
+
+    //std::vector<std::string> getAllContexts(uint8_t order);
+    //std::vector<std::string> getAllContexts(std::vector<std::string> strings, uint8_t order);
+
+    //void initializeMap(std::map<std::string, std::map<char, uint32_t>>& mapContext, uint8_t order);
 };
