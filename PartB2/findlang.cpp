@@ -3,10 +3,8 @@
 #include <iostream>
 #include <cmath>
 
-double alpha = 0.5;
-
 int main(int argc, char *argv[]){
-        std::string modelFilePath; 
+    std::string modelFilePath; 
     std::string testFilePath; 
     double alpha;
 

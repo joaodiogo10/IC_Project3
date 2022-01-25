@@ -91,21 +91,19 @@ class FCM {
          */
         double modelEntropy();
         
+
+        double estimateTotalBits(const std::string filePath, const double alpha, uint64_t &totalCharacters);
+
+
     private:
         uint8_t order;
         uint64_t totalMatches;
 
-    double modelEntropy();
+        std::map<std::string, std::map<char, uint64_t>> mapContext;
+        std::map<std::string, uint64_t> contextCount;
 
-private:
-    uint8_t order;
-    uint64_t totalMatches;
+        //std::vector<std::string> getAllContexts(uint8_t order);
+        //std::vector<std::string> getAllContexts(std::vector<std::string> strings, uint8_t order);
 
-    std::map<std::string, std::map<char, uint64_t>> mapContext;
-    std::map<std::string, uint64_t> contextCount;
-
-    //std::vector<std::string> getAllContexts(uint8_t order);
-    //std::vector<std::string> getAllContexts(std::vector<std::string> strings, uint8_t order);
-
-    //void initializeMap(std::map<std::string, std::map<char, uint32_t>>& mapContext, uint8_t order);
+        //void initializeMap(std::map<std::string, std::map<char, uint32_t>>& mapContext, uint8_t order);
 };
