@@ -8,7 +8,7 @@ cd ./build ;
 
 for text in $texts
 do
-    order=3
+    order=$1
 
     [ ! -d "../../Models" ] && mkdir ../../Models
 

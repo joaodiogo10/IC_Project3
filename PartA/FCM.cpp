@@ -91,13 +91,19 @@ bool FCM::loadFCM(std::string filePath)
     if (!(inputFile >> totalMatches))
         return false;
 
+    uint16_t tmp;
+    if(!(inputFile >> tmp))
+        return false;
+
+    order = tmp;
+
     std::string context;
     char c;
     uint64_t total;
 
     while (inputFile.peek() != EOF)
     {
-        if (!(inputFile >> context))
+        if (order != 0 && !(inputFile >> context))
             return false;
         if (!(inputFile >> c))
             return false;
@@ -113,7 +119,6 @@ bool FCM::loadFCM(std::string filePath)
         inputFile.get();
     }
 
-    order = context.size();
     inputFile.close();
     return true;
 }
@@ -130,7 +135,8 @@ bool FCM::saveFCM(std::string filePath)
     if (!outputFile)
         return false;
 
-    outputFile << totalMatches << std::endl;
+    outputFile << totalMatches << " " << (uint16_t) order << std::endl;
+
     for (const auto pairContext : mapContext)
     {
         std::map<char, uint64_t> mapCount = pairContext.second;

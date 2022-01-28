@@ -61,8 +61,8 @@ int main(int argc, char *argv[]){
             bestLanguage = language;
         }
 
-        std::cout << "\n\nLanguage: " << language << std::endl;
-        std::cout << "Bits per character: " << totalBits / totalCharacters << std::endl;
+        //std::cout << "\n\nLanguage: " << language << std::endl;
+        //std::cout << "Bits per character: " << totalBits / totalCharacters << std::endl;
     }
     std::cout << "\n\n--------Best Result--------" << std::endl;
     std::cout << "Language: " << bestLanguage << std::endl;
