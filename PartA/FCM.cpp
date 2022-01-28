@@ -192,35 +192,37 @@ double FCM::modelEntropy()
     return modelEntropy;
 }
 
-double FCM::estimateTotalBits(const std::string filePath, const double alpha, uint64_t &totalCharacters) 
+double FCM::estimateTotalBits(const std::string filePath, const double alpha, uint64_t &totalCharacters)
 {
     std::ifstream testFile;
     testFile.open(filePath, std::ios::in);
-    if(!testFile)
+    if (!testFile)
         return -1;
 
     char context[order];
-    
+
     double totalBits = 0;
     char nextChar = '\0';
     totalCharacters = 0;
 
-    while(testFile >> nextChar) {
+    while (testFile >> nextChar)
+    {
         nextChar = tolower(nextChar);
         std::string strContext(context, order);
-        
+
         uint64_t cCount = contextCount[strContext];
         uint64_t entry = mapContext[strContext][nextChar];
         uint32_t nUniqueEntries = mapContext[strContext].size();
 
         totalBits -= std::log2((entry + alpha) / (double(cCount) + alpha * nUniqueEntries));
 
-        //update context        
-        for(int i = 1; i < order; i++) {
-            context[i-1] = context[i];
+        //update context
+        for (int i = 1; i < order; i++)
+        {
+            context[i - 1] = context[i];
         }
-        context[order-1] = nextChar;
-        
+        context[order - 1] = nextChar;
+
         totalCharacters++;
     }
 

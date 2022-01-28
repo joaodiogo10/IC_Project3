@@ -3,7 +3,18 @@
 #include <fstream>
 #include <sstream>
 
-// ./loadFile FCM order textFile
+/** \file
+ *  File to create a FCM from a text.
+ */
+/**
+ * \brief
+ * Usage: ./loadFile FCMName order textFile \n
+ * 
+ * Given the name of the output file (FCM) and the order, it generates
+ * the context model from the given textFile.
+ * 
+ */
+
 int main(int argc, char *argv[])
 {
     std::string FCMName = argv[1];
@@ -20,9 +31,7 @@ int main(int argc, char *argv[])
         return -1;
     }
 
-    std::string finalPath = FCMName + "_" + (std::string)argv[2];
-
-    if (!fcm.saveFCM(finalPath))
+    if (!fcm.saveFCM(FCMName))
         std::cout << "Failed to save file!" << std::endl;
 
     return 0;
