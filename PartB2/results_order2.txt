@@ -1,0 +1,598 @@
+Language: Bulgarian Text: Епически_песни 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Bulgarian
+Total bits: 209499
+Total characters: 94129
+Bits per character: 2.22566
+
+
+Language: Bulgarian Text: Епопея_на_забравените 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Bulgarian
+Total bits: 160830
+Total characters: 72100
+Bits per character: 2.23066
+
+
+Language: Bulgarian Text: Мислите_в_главите 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Bulgarian
+Total bits: 873200
+Total characters: 357428
+Bits per character: 2.44301
+
+
+Language: Czech Text: Cítanka_pro_skoly_obecné 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Czech
+Total bits: 283326
+Total characters: 63154
+Bits per character: 4.48626
+
+
+Language: Czech Text: R.U.R. 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Czech
+Total bits: 434894
+Total characters: 104290
+Bits per character: 4.17005
+
+
+Language: Czech Text: Úplná_učebnice_mezinárodní_řeči_dra 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Bulgarian
+Total bits: 126797
+Total characters: 27822
+Bits per character: 4.55744
+
+
+Language: Danish Text: Absalons_Brønd 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Danish
+Total bits: 1.46163e+06
+Total characters: 374820
+Bits per character: 3.89954
+
+
+Language: Danish Text: Enkens_Søn 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Danish
+Total bits: 81848.6
+Total characters: 20245
+Bits per character: 4.04291
+
+
+Language: Danish Text: Samlede_Værker 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Danish
+Total bits: 1.06316e+06
+Total characters: 250556
+Bits per character: 4.24321
+
+
+Language: Dutch Text: Hermaphrodisie_en_Uranisme 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Dutch
+Total bits: 315634
+Total characters: 89268
+Bits per character: 3.5358
+
+
+Language: Dutch Text: Instituut_Sparrenheide 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Dutch
+Total bits: 696613
+Total characters: 192732
+Bits per character: 3.61441
+
+
+Language: Dutch Text: Mei-droom 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Dutch
+Total bits: 229187
+Total characters: 60404
+Bits per character: 3.79423
+
+
+Language: English Text: Modern_essays 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: English
+Total bits: 1.44434e+06
+Total characters: 397726
+Bits per character: 3.63149
+
+
+Language: English Text: return_to_gone-away 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: English
+Total bits: 724725
+Total characters: 184837
+Bits per character: 3.92089
+
+
+Language: English Text: the_little_review 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: English
+Total bits: 363911
+Total characters: 98148
+Bits per character: 3.70777
+
+
+Language: Estonian Text: Libahunt 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Estonian
+Total bits: 278018
+Total characters: 66899
+Bits per character: 4.15578
+
+
+Language: Finnish Text: Hattu 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Finnish
+Total bits: 143117
+Total characters: 38964
+Bits per character: 3.67307
+
+
+Language: Finnish Text: Keltakukkia 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Finnish
+Total bits: 454694
+Total characters: 130899
+Bits per character: 3.47363
+
+
+Language: Finnish Text: Sokkosilla 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Finnish
+Total bits: 128975
+Total characters: 35078
+Bits per character: 3.67681
+
+
+Language: French Text: Le_conte_futur 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: French
+Total bits: 96716.9
+Total characters: 27828
+Bits per character: 3.47553
+
+
+Language: French Text: Les_misérables 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: French
+Total bits: 1.87978e+06
+Total characters: 535126
+Bits per character: 3.51278
+
+
+Language: French Text: Maurin_des_Maures 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: French
+Total bits: 1.9008e+06
+Total characters: 530687
+Bits per character: 3.58177
+
+
+Language: German Text: Betrachtung 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: German
+Total bits: 103383
+Total characters: 31659
+Bits per character: 3.2655
+
+
+Language: German Text: Die_Chronik_der_Sperlingsgasse 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: German
+Total bits: 946341
+Total characters: 271110
+Bits per character: 3.49062
+
+
+Language: German Text: Die_Religion_innerhalb_der_Grenzen_der_bloßen_Vernunft 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: German
+Total bits: 1.64769e+06
+Total characters: 481761
+Bits per character: 3.42013
+
+
+Language: Hungarian Text: A_halottak_élén 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Hungarian
+Total bits: 323443
+Total characters: 83844
+Bits per character: 3.85767
+
+
+Language: Hungarian Text: Solus_eris 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Hungarian
+Total bits: 1.42255e+06
+Total characters: 403188
+Bits per character: 3.52825
+
+
+Language: Hungarian Text: Takáts 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Hungarian
+Total bits: 27640.3
+Total characters: 7794
+Bits per character: 3.54636
+
+
+Language: Italian Text: Compendio_di_psicologia 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Italian
+Total bits: 2.17147e+06
+Total characters: 670487
+Bits per character: 3.23865
+
+
+Language: Italian Text: II_passaggio 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Italian
+Total bits: 491502
+Total characters: 136994
+Bits per character: 3.58776
+
+
+Language: Italian Text: Momenti_Liriche 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Italian
+Total bits: 161123
+Total characters: 43615
+Bits per character: 3.69422
+
+
+Language: Italian Text: Trasfigurazione 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Italian
+Total bits: 105134
+Total characters: 29605
+Bits per character: 3.55121
+
+
+Language: Polish Text: Jeden_miesiąc 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Polish
+Total bits: 663374
+Total characters: 184886
+Bits per character: 3.58802
+
+
+Language: Polish Text: Język_Polski 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Polish
+Total bits: 280992
+Total characters: 75789
+Bits per character: 3.70755
+
+
+Language: Polish Text: Na_śmierć 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Polish
+Total bits: 137777
+Total characters: 37708
+Bits per character: 3.65378
+
+
+Language: Portuguese Text: cintra 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Portuguese
+Total bits: 23619.9
+Total characters: 5882
+Bits per character: 4.01562
+
+
+Language: Portuguese Text: jaime_de_magalhaes_lima 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Portuguese
+Total bits: 111570
+Total characters: 30510
+Bits per character: 3.65683
+
+
+Language: Portuguese Text: lusiadas 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Portuguese
+Total bits: 965565
+Total characters: 267572
+Bits per character: 3.60862
+
+
+Language: Portuguese Text: orpheus 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Portuguese
+Total bits: 297914
+Total characters: 78217
+Bits per character: 3.80881
+
+
+Language: Romanian Text: Nuvele 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Romanian
+Total bits: 710252
+Total characters: 177699
+Bits per character: 3.99694
+
+
+Language: Romanian Text: Povești 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Romanian
+Total bits: 940639
+Total characters: 249101
+Bits per character: 3.77614
+
+
+Language: Romanian Text: Țara_mea 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Romanian
+Total bits: 893580
+Total characters: 253022
+Bits per character: 3.53163
+
+
+Language: Slovenian Text: Za_narodov_blagor 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Slovenian
+Total bits: 428577
+Total characters: 107695
+Bits per character: 3.97955
+
+
+Language: Swedish Text: David_Ramms 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Swedish
+Total bits: 888839
+Total characters: 251189
+Bits per character: 3.53853
+
+
+Language: Swedish Text: Moloks_leende 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Swedish
+Total bits: 926625
+Total characters: 266961
+Bits per character: 3.47101
+
+
+Language: Swedish Text: Tjuvbandet 
+
+Alpha: 0.2
+Order: 2
+
+
+--------Best Result--------
+Language: Swedish
+Total bits: 990401
+Total characters: 275020
+Bits per character: 3.6012
+
+

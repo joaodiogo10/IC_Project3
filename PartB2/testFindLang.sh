@@ -1,14 +1,28 @@
+#! /bin/sh
 
-cd build;
+languagesToTest=`ls ../Texts`;
 
-./findlang ../../Models ../../Texts/Portuguese/orpheus 0.1 1
-./findlang ../../Models ../../Texts/Portuguese/orpheus 0.5 1
-./findlang ../../Models ../../Texts/Portuguese/orpheus 1 1
+order=4
+alpha=0.2
 
-./findlang ../../Models ../../Texts/Portuguese/orpheus 0.5 1
-./findlang ../../Models ../../Texts/Portuguese/orpheus 0.5 2
-./findlang ../../Models ../../Texts/Portuguese/orpheus 0.5 3
+rm -f results_order${order}.txt
+file="results_order${order}.txt"
 
+cd ./build ;
 
-./findlang ../../Models ../../Texts/Portuguese/orpheus 0.1 3
-./findlang ../../Models ../../Texts/Portuguese/orpheus 1 3
+for language in $languagesToTest
+do
+    texts=`ls ../../Texts/${language}`;
+
+    for text in $texts
+    do
+        echo "Language: ${language} Text: ${text} \n" >> ../$file
+        ./findlang ../../Models ../../Texts/${language}/${text} ${alpha} ${order} >> ../$file
+        echo '\n' >> ../$file
+    done
+
+    
+done
+
+touch $file &
+
