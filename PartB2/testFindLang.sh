@@ -2,11 +2,13 @@
 
 languagesToTest=`ls ../Texts`;
 
-order=4
-alpha=0.2
+order=$1
+alpha=$2
 
-rm -f results_order${order}.txt
-file="results_order${order}.txt"
+[ ! -d "Results" ] && mkdir ../Models
+
+rm -f "./Results/order${order}_${alpha}.txt"
+file="./Results/order${order}_${alpha}.txt"
 
 cd ./build ;
 
@@ -23,6 +25,4 @@ do
 
     
 done
-
-touch $file &
 

@@ -38,6 +38,7 @@ int main(int argc, char *argv[]){
 
     uint64_t totalCharacters = 0;
 
+    double modelEntropy = 0;
     //Test text file for each model
     for(std::string modelFile : modelFileList) {
         FCM fcm = FCM();
@@ -59,6 +60,7 @@ int main(int argc, char *argv[]){
         if(bestTotalBits > totalBits) {
             bestTotalBits = totalBits;
             bestLanguage = language;
+            modelEntropy = fcm.modelEntropy();
         }
 
         //std::cout << "\n\nLanguage: " << language << std::endl;
@@ -68,6 +70,7 @@ int main(int argc, char *argv[]){
     std::cout << "Language: " << bestLanguage << std::endl;
     std::cout << "Total bits: " << bestTotalBits << std::endl;
     std::cout << "Total characters: " << totalCharacters << std::endl;
+    std::cout << "Model entropy: " << modelEntropy << std::endl;
     std::cout << "Bits per character: " << bestTotalBits / totalCharacters << std::endl;
     
     return 0;

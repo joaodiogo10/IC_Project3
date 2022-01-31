@@ -1,0 +1,644 @@
+Language: Bulgarian Text: Епически_песни 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Bulgarian
+Total bits: 368750
+Total characters: 94129
+Model entropy: 3.70887
+Bits per character: 3.9175
+
+
+Language: Bulgarian Text: Епопея_на_забравените 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Bulgarian
+Total bits: 282130
+Total characters: 72100
+Model entropy: 3.70887
+Bits per character: 3.91303
+
+
+Language: Bulgarian Text: Мислите_в_главите 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Bulgarian
+Total bits: 1.45977e+06
+Total characters: 357428
+Model entropy: 3.70887
+Bits per character: 4.08411
+
+
+Language: Czech Text: Cítanka_pro_skoly_obecné 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Czech
+Total bits: 362357
+Total characters: 63154
+Model entropy: 4.9505
+Bits per character: 5.73768
+
+
+Language: Czech Text: R.U.R. 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Czech
+Total bits: 555903
+Total characters: 104290
+Model entropy: 4.9505
+Bits per character: 5.33035
+
+
+Language: Czech Text: Úplná_učebnice_mezinárodní_řeči_dra 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Czech
+Total bits: 153255
+Total characters: 27822
+Model entropy: 4.9505
+Bits per character: 5.50842
+
+
+Language: Danish Text: Absalons_Brønd 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Danish
+Total bits: 1.74395e+06
+Total characters: 374820
+Model entropy: 4.35466
+Bits per character: 4.65278
+
+
+Language: Danish Text: Enkens_Søn 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Danish
+Total bits: 93668.3
+Total characters: 20245
+Model entropy: 4.35466
+Bits per character: 4.62674
+
+
+Language: Danish Text: Samlede_Værker 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Danish
+Total bits: 1.27254e+06
+Total characters: 250556
+Model entropy: 4.35466
+Bits per character: 5.07888
+
+
+Language: Dutch Text: Hermaphrodisie_en_Uranisme 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Dutch
+Total bits: 397864
+Total characters: 89268
+Model entropy: 4.18508
+Bits per character: 4.45696
+
+
+Language: Dutch Text: Instituut_Sparrenheide 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Dutch
+Total bits: 853121
+Total characters: 192732
+Model entropy: 4.18508
+Bits per character: 4.42646
+
+
+Language: Dutch Text: Mei-droom 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Dutch
+Total bits: 282849
+Total characters: 60404
+Model entropy: 4.18508
+Bits per character: 4.68262
+
+
+Language: English Text: Modern_essays 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: English
+Total bits: 1.76888e+06
+Total characters: 397726
+Model entropy: 4.27938
+Bits per character: 4.44748
+
+
+Language: English Text: return_to_gone-away 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: English
+Total bits: 874602
+Total characters: 184837
+Model entropy: 4.27938
+Bits per character: 4.73175
+
+
+Language: English Text: the_little_review 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: English
+Total bits: 470720
+Total characters: 98148
+Model entropy: 4.27938
+Bits per character: 4.79602
+
+
+Language: Estonian Text: Libahunt 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Estonian
+Total bits: 322110
+Total characters: 66899
+Model entropy: 4.31744
+Bits per character: 4.81487
+
+
+Language: Finnish Text: Hattu 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Finnish
+Total bits: 182549
+Total characters: 38964
+Model entropy: 4.22581
+Bits per character: 4.68507
+
+
+Language: Finnish Text: Keltakukkia 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Finnish
+Total bits: 566532
+Total characters: 130899
+Model entropy: 4.22581
+Bits per character: 4.32801
+
+
+Language: Finnish Text: Sokkosilla 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Finnish
+Total bits: 157431
+Total characters: 35078
+Model entropy: 4.22581
+Bits per character: 4.48802
+
+
+Language: French Text: Le_conte_futur 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: French
+Total bits: 126920
+Total characters: 27828
+Model entropy: 4.37589
+Bits per character: 4.56088
+
+
+Language: French Text: Les_misérables 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: French
+Total bits: 2.42866e+06
+Total characters: 535126
+Model entropy: 4.37589
+Bits per character: 4.53849
+
+
+Language: French Text: Maurin_des_Maures 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: French
+Total bits: 2.47438e+06
+Total characters: 530687
+Model entropy: 4.37589
+Bits per character: 4.66261
+
+
+Language: German Text: Betrachtung 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: German
+Total bits: 144072
+Total characters: 31659
+Model entropy: 4.35444
+Bits per character: 4.55073
+
+
+Language: German Text: Die_Chronik_der_Sperlingsgasse 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: German
+Total bits: 1.26096e+06
+Total characters: 271110
+Model entropy: 4.35444
+Bits per character: 4.6511
+
+
+Language: German Text: Die_Religion_innerhalb_der_Grenzen_der_bloßen_Vernunft 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: German
+Total bits: 2.305e+06
+Total characters: 481761
+Model entropy: 4.35444
+Bits per character: 4.78453
+
+
+Language: Hungarian Text: A_halottak_élén 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Hungarian
+Total bits: 414729
+Total characters: 83844
+Model entropy: 4.69247
+Bits per character: 4.94644
+
+
+Language: Hungarian Text: Solus_eris 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Hungarian
+Total bits: 1.98182e+06
+Total characters: 403188
+Model entropy: 4.69247
+Bits per character: 4.91538
+
+
+Language: Hungarian Text: Takáts 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Hungarian
+Total bits: 37878.6
+Total characters: 7794
+Model entropy: 4.69247
+Bits per character: 4.85996
+
+
+Language: Italian Text: Compendio_di_psicologia 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Italian
+Total bits: 3.04286e+06
+Total characters: 670487
+Model entropy: 4.19633
+Bits per character: 4.53828
+
+
+Language: Italian Text: II_passaggio 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Italian
+Total bits: 609188
+Total characters: 136994
+Model entropy: 4.19633
+Bits per character: 4.44682
+
+
+Language: Italian Text: Momenti_Liriche 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Italian
+Total bits: 199872
+Total characters: 43615
+Model entropy: 4.19633
+Bits per character: 4.58265
+
+
+Language: Italian Text: Trasfigurazione 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Italian
+Total bits: 130391
+Total characters: 29605
+Model entropy: 4.19633
+Bits per character: 4.40435
+
+
+Language: Polish Text: Jeden_miesiąc 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Polish
+Total bits: 924161
+Total characters: 184886
+Model entropy: 4.79722
+Bits per character: 4.99855
+
+
+Language: Polish Text: Język_Polski 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Polish
+Total bits: 440140
+Total characters: 75789
+Model entropy: 4.79722
+Bits per character: 5.80744
+
+
+Language: Polish Text: Na_śmierć 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Polish
+Total bits: 187916
+Total characters: 37708
+Model entropy: 4.79722
+Bits per character: 4.98345
+
+
+Language: Portuguese Text: cintra 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Portuguese
+Total bits: 26882.7
+Total characters: 5882
+Model entropy: 4.37823
+Bits per character: 4.57033
+
+
+Language: Portuguese Text: jaime_de_magalhaes_lima 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Portuguese
+Total bits: 138748
+Total characters: 30510
+Model entropy: 4.37823
+Bits per character: 4.54763
+
+
+Language: Portuguese Text: lusiadas 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Portuguese
+Total bits: 1.20585e+06
+Total characters: 267572
+Model entropy: 4.37823
+Bits per character: 4.50664
+
+
+Language: Portuguese Text: orpheus 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Portuguese
+Total bits: 368626
+Total characters: 78217
+Model entropy: 4.37823
+Bits per character: 4.71286
+
+
+Language: Romanian Text: Nuvele 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Romanian
+Total bits: 951606
+Total characters: 177699
+Model entropy: 4.48136
+Bits per character: 5.35516
+
+
+Language: Romanian Text: Povești 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Romanian
+Total bits: 1.3179e+06
+Total characters: 249101
+Model entropy: 4.48136
+Bits per character: 5.29061
+
+
+Language: Romanian Text: Țara_mea 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Romanian
+Total bits: 1.18963e+06
+Total characters: 253022
+Model entropy: 4.48136
+Bits per character: 4.7017
+
+
+Language: Slovenian Text: Za_narodov_blagor 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Slovenian
+Total bits: 590295
+Total characters: 107695
+Model entropy: 4.4636
+Bits per character: 5.48117
+
+
+Language: Swedish Text: David_Ramms 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Swedish
+Total bits: 1.16351e+06
+Total characters: 251189
+Model entropy: 4.46049
+Bits per character: 4.63203
+
+
+Language: Swedish Text: Moloks_leende 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Swedish
+Total bits: 1.2311e+06
+Total characters: 266961
+Model entropy: 4.46049
+Bits per character: 4.61153
+
+
+Language: Swedish Text: Tjuvbandet 
+
+Alpha: 0.2
+Order: 0
+
+
+--------Best Result--------
+Language: Swedish
+Total bits: 1.4072e+06
+Total characters: 275020
+Model entropy: 4.46049
+Bits per character: 5.11671
+
+
