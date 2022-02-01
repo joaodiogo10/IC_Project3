@@ -6,6 +6,7 @@
 /** \file
  *  File to create a FCM from a text.
  */
+
 /**
  * \brief
  * Usage: ./loadFile FCMName order textFile \n

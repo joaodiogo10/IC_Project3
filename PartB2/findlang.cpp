@@ -4,6 +4,10 @@
 #include <iostream>
 #include <limits>
 
+/** \file
+ *  findlang
+ */
+
 bool listFiles(const std::string directoryModels, const int order, std::vector<std::string> &fileVector);
 std::string getLanguageFromFile(const std::string fileName);
 

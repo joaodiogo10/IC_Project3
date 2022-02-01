@@ -3,7 +3,9 @@
 #include <iostream>
 #include <cmath>
 
-double alpha = 0.5;
+/** \file
+ *  lang
+ */
 
 int main(int argc, char *argv[]){
         std::string modelFilePath; 

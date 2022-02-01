@@ -1,6 +1,10 @@
 #include "FCM.h"
 #include <iostream>
 
+/** \file
+ *  PartA main
+ */
+
 int main(int argc, char *argv[]){
 
     uint16_t input = 0;

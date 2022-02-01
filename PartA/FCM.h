@@ -92,7 +92,14 @@ class FCM {
          */
         double modelEntropy();
         
-
+        /**
+         * \brief Estimates total bits need to represent a text file using the instanciated model
+         * 
+         * \param[in] filePath Path of file
+         * \param[in] alpha Alpha parameter user
+         * \param[out] totalCharacters total number of characters in the file
+         * \return Estimated number of bits
+         */
         double estimateTotalBits(const std::string filePath, const double alpha, uint64_t &totalCharacters);
 
 
